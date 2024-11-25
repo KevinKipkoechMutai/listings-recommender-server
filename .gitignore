@@ -1,1 +1,73 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django specific
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.swp
+*.swo
+*.DS_Store
+
+# Environments
+.env
+*.env
+
+# Virtual environment
 venv/
+env/
+ENV/
+
+# Static and media files (if generated dynamically)
+staticfiles/
+media/
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Migrations (if you want to exclude them for some reason)
+# Uncomment if you prefer migrations to be local
+#migrations/
+
+# Byte-compiled / optimized / DLL files
+*.dll
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and debugging
+*.log
+*.out
+*.err
+
+# Testing
+coverage/
+.tox/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Git
+!.gitignore
