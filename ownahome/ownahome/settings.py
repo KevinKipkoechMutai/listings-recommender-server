@@ -30,7 +30,9 @@ SECRET_KEY = 'django-insecure-q6-j!phnqpze=*+-sb8*+j)h1q4l@$a%95b&l@qa8^_j(4prwf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'listings-recommender-server.onrender.com'
+]
 
 
 # Application definition
