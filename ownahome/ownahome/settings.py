@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import dj_database_url
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'ownahome.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse(
-        "postgresql://django_db_proptech_user:P8JEk6awc1SNBvBrk27I2FxaWzs4Fo78@dpg-ct2aaepopnds73fqn4tg-a.oregon-postgres.render.com/django_db_proptech",
+        os.getenv("DATABASE_URL")
     )
 }
 
