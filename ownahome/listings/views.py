@@ -93,7 +93,7 @@ def delete_listing(request, listing_id):
     try:
         listing = Listing.objects.get(id=listing_id)
         listing.delete()
-        return Response({"messgae": "Listing deleted successfully."}, status=204)
+        return Response({"messgae": "Listing deleted successfully."}, status=200)
     #handle exception
     except Listing.DoesNotExist:
         return Response({"error": "Listing not found"})
